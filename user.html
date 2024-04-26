@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW USER</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="dash-container">
+        <header>
+            <div class="dash-header1">
+                <h2 class="header-hover">ACCUPAY <span>SOLUTION</span></h2>
+                <div class="dash-header-left">
+                    <h4 class="header-hover"><i class="fa fa-box fa-1x icon"></i>DASHBOARD</h4>
+                    <button class="sign-out-btn header-hover"><strong>SIGN OUT</strong></button>
+                    <i class="fa fa-bars fa-1x header-hover" id="menu"></i>
+                </div>
+            </div>
+            <div class="dash-header2">
+                <hr>
+                <h6><strong>CREATE NEW USER</strong></h6>
+                <hr>
+                <h6><strong>VIEW ATTENDANCE</strong></h6>
+                <hr>
+                <h6><strong>TAX</strong></h6>
+                <hr>
+                <h6><strong>VIEW EMPLOYEES</strong></h6>
+                <hr>
+                <h6><strong>ADMINISTRATION</strong></h6>
+                <hr>
+                <h6><strong>EMPLOYEES PERKS</strong></h6>
+                <hr>
+                <h6><strong>SIGN OUT</strong></h6>
+            </div>
+        </header>
+
+        <main class="usermain">
+            <form action="/action" class="userform">
+                <h3><i class="fa fa-user-plus fa-1x"></i> CREATE NEW EMPLOYEES</h3>
+                <label for="fname"><strong>First Name:</strong></label><br>
+                <input type="text" name="fname" id="fname" placeholder="Enter First Name"><br>
+                <label for="lname"><strong>Last Name:</strong></label><br>
+                <input type="text" name="lname" id="lname" placeholder="Enter Last Name"> <br>
+                <label for="email"><strong>Email:</strong></label><br>
+                <input type="email" name="email" id="email" placeholder="Enter Employees Email"><br>
+                <label for="dept"><strong>Department:</strong></label><br>
+                <input type="text" name="dept" id="dept" placeholder="Enter Department Name"><br>
+                <label for="id_no"><strong>Employee ID no:</strong></label><br>
+                <input type="number" name="id_no" id="id_no" placeholder="Enter your ID no"><br>
+                <label for="nin"><strong>Employee nin:</strong></label><br>
+                <input type="number" name="nin" id="nin" placeholder="Enter your nin"><br>
+                <label for="date"><strong>Start Date:</strong></label><br>
+                <input type="date" name="date" id="date"><br>
+                <label for="salary"><strong>Salary(per Hour):</strong></label><br>
+                <input type="text" name="salary" id="salary" placeholder="Enter Employee Salary"><br>
+                <label for="over"><strong>Overtime(per Hour):</strong></label><br>
+                <input type="text" name="over" id="over" placeholder="Enter Employees overtime"><br>
+                <label for="accno"><strong>Bank Account no:</strong></label><br>
+                <input type="number" name="accno" id="accno" placeholder="Enter Employees Account Number"><br>
+                <label for="accname"><strong>Bank Account Name:</strong></label><br>
+                <input type="text" name="accname" id="accname" placeholder="Enter Employee Account Name"><br>
+                <label for="password"><strong>Password:</strong></label><br>
+                <input type="password" name="password" id="password" placeholder="Enter Password"><br>
+                <label for="confirm"><strong>Comfirm Password:</strong></label><br>
+                <input type="confirm" name="confirm" id="confirm" placeholder="Comfirm Password"><br>
+                <input type="submit" name="submit" id="btn" value="CREATE NEW EMPLOYEE">
+            </form>
+        </main>
+    </div>
+
+    <script src="js-file/dash.js"></script>
+</body>
+
+
+
+</html>

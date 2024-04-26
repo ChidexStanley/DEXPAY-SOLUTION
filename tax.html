@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="dash-container">
+        <header>
+            <div class="dash-header1">
+                <h2 class="header-hover">ACCUPAY <span>SOLUTION</span></h2>
+                <div class="dash-header-left">
+                    <h4 class="header-hover"><i class="fa fa-box fa-1x icon"></i>DASHBOARD</h4>
+                    <button class="sign-out-btn header-hover"><strong>SIGN OUT</strong></button>
+                    <i class="fa fa-bars fa-1x header-hover" id="menu"></i>
+                </div>
+            </div>
+            <div class="dash-header2">
+                <hr>
+                <h6><strong>CREATE NEW USER</strong></h6>
+                <hr>
+                <h6><strong>VIEW ATTENDANCE</strong></h6>
+                <hr>
+                <h6><strong>TAX</strong></h6>
+                <hr>
+                <h6><strong>VIEW EMPLOYEES</strong></h6>
+                <hr>
+                <h6><strong>ADMINISTRATION</strong></h6>
+                <hr>
+                <h6><strong>EMPLOYEES PERKS</strong></h6>
+                <hr>
+                <h6><strong>SIGN OUT</strong></h6>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div>
+            <h3><i class="fa fa-database"></i>CREATE NEW TAX</h3>
+            <form action="">
+                <div class="taxform">
+                    <div>
+                        <label for="tax">Tax Name</label><br>
+                        <input type="text" id="tax" placeholder="Enter tax name">
+                    </div>
+                    <div>
+                        <label for="amount">Amount</label><br>
+                        <input type="number" id="amount" placeholder="Enter Amount">
+                    </div>
+                    <input type="submit" value="CREATE NEW TAX">
+                </div>
+            </form>
+
+        </div>
+        <div class="tablemain">
+            <h3 class="taxh3"> <i class="fa fa-th-list fa-1x"></i> Employee Attendance</h3>
+            <table class="taxtable">
+                <thead>
+                    <th>S/N</th>
+                    <th><strong>TAX NAME</strong></th>
+                    <th><strong>TAX AMOUNT</strong></th>
+                    <th><strong>TAX ID</strong></th>
+                    <th><strong>ACTION</strong></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Government</td>
+                        <td>300</td>
+                        <td>TAX-ID-aiskmcsnfnoeGBnmsBHK</td>
+                        <td><button type="button" class="deletebtn">Delete Tax</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Government</td>
+                        <td>300</td>
+                        <td>TAX-ID-aiskmcsnfnoeGBnmsBHK</td>
+                        <td><button type="button" class="deletebtn">Delete Tax</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Government</td>
+                        <td>300</td>
+                        <td>TAX-ID-aiskmcsnfnoeGBnmsBHK</td>
+                        <td><button type="button" class="deletebtn">Delete Tax</button></td>
+                    </tr>
+
+                    <!-- will still edith the table -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login-content {
+    width: 75%;
+    background-color: #2828;
+}
+
+.login-content-header {
+    text-align: center;
+    border-radius: 5%;
+    color: white;
+    padding-top: 0;
+}
+
+form {
+    background-color: aliceblue;
+}
+
+.login-input {
+    width: 100%;
+    margin-top: 1rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: aliceblue;
+}
+
+.login-summit {
+    padding: 1rem;
+    background-color: #282828;
+    color: white;
+    border: none;
+    font-size: larger;
+}
+
+.see-test {
+    position: relative;
+}
+
+.fa-eye {
+    position: absolute;
+    left: 90%;
+    bottom: 1.3rem;
+}
+
+.fa-eye-slash {
+    position: absolute;
+    left: 90%;
+    bottom: 1.3rem;
+}
+
+/* dashboard styling */
+
+.dash-body {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.dash-container {
+    width: 100%;
+    border-top: #2828 solid 1px;
+    background-color: #2828;
+}
+
+.dash-header1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    color: white;
+}
+
+.dash-header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-hover {
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 2% 29%;
+    overflow: visible;
+}
+
+.header-hover:hover {
+    background-color: #2828;
+    color: black;
+    cursor: pointer;
+}
+
+.dash-header-left>i {
+    display: none;
+}
+
+.dash-header2 {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    margin-left: 1rem;
+    display: none;
+}
+
+.sign-out-btn {
+    height: 2rem;
+    background-color: #282828;
+    color: white;
+    margin-right: 1rem;
+}
+
+.dash-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 2%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    width: 17rem;
+    height: 8rem;
+    margin-bottom: 3rem;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2rem;
+    transition: transform 1s;
+}
+
+.box-content {
+    margin-top: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.signout-box {
+    background-color: #282828;
+    color: white;
+    border: 0;
+}
+
+.logout-box {
+    background-color: red;
+    color: white;
+    border: 0;
+}
+
+.box:hover {
+    color: greenyellow;
+    transform: skewY(5deg);
+    cursor: pointer;
+}
+
+/* respoonsiveness for the dashboard*/
+
+/* styles for size smaller than 1024px but bigger than 600px */
+@media only screen and (max-width: 1024px) {
+
+    .dash-header-left>h4,
+    .dash-header-left>button {
+        display: none;
+    }
+
+    .dash-header-left>i {
+        display: flex;
+        font-size: xx-large;
+    }
+
+    .header-hover>span {
+        display: none;
+    }
+
+}
+
+/* styles for size smaller than 600px */
+@media only screen and (max-width: 600px) {
+
+    .dash-header-left>h4,
+    .dash-header-left>button {
+        display: none;
+    }
+
+    .dash-header-left>i {
+        display: flex;
+        font-size: x-large;
+    }
+
+    .header-hover>span {
+        display: none;
+    }
+
+    .header-hover:hover {
+        background-color: #2828;
+    }
+}
+
+/* user information */
+.userform {
+    margin-left: 2rem;
+    background-color: aliceblue;
+    padding-top: 0.5rem;
+}
+
+.userform>input {
+    width: 90%;
+    padding: 0.5rem;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    background-color: aliceblue;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.usermain {
+    background-color: aliceblue;
+}
+
+#btn {
+    background-color: #282828;
+    color: white;
+    border: 0;
+    width: 91.31%;
+    padding: 1rem;
+}
+
+/* attendance styling */
+
+table {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.tablemain {
+    padding-top: 0.1rem;
+}
+
+th,
+td:first-child {
+    background-color: #282828;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* TAX  */
+
+.taxform {
+    display: flex;
+    gap: 10rem;
+}
+
+.taxform>div>input {
+    width: 20rem;
+    height: 2rem;
+    border: 0;
+}
+
+.taxform>input {
+    margin-top: auto;
+    height: 2rem;
+    width: 20rem;
+    background-color: #282828;
+    color: white;
+    cursor: pointer;
+}
+
+.taxtable {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.taxh3 {
+    text-align: center;
+}
+
+.deletebtn {
+    height: 2rem;
+    background-color: red;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+/*  playroll slip */
+
+.payment>form {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.payment-main {
+    display: flex;
+    justify-content: center;
+}
+
+.payment-innerheader {
+    background-color: #282828;
+    color: white;
+    padding-left: 1rem;
+}
+
+.payment-cal {
+    display: flex;
+    gap: 2rem;
+}
+
+.innerfoot-content2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerfoot-content3 {
+    display: flex;
+    justify-content: center;
+}
+
+.innerfoot-content1 {
+    background-color: #282828;
+    color: white;
+    font-size: small;
+    height: 2.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    width: 9rem;
+    font-size: 8px;
+}
